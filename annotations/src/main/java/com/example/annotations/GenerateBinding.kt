@@ -11,7 +11,7 @@ import kotlin.reflect.KClass
 //2 - Binary - Means that the annotation is stored in the binary Output and be visible at the compile time but when the application is running this annotation won't be visible
 //3 - Runtime - Means that the annotation is stored in the binary Output and be visible at the compile time and when the application is running this annotation will be visible
 annotation class GenerateBinding(
-    val type : KClass<*> //Part of Kotlin Reflect instance of the class can be obtained by ::class
+    val type : KClass<*> //Part of Kotlin Reflect instance of the class can be obtained by ::class // But is just like a blue print not like a real instance holds info just about the structure
 )
 
 //Kotlin Reflection API
