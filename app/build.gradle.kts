@@ -74,7 +74,10 @@ dependencies {
     implementation(libs.dagger.hilt)
     kapt(libs.dagger.hilt.compiler)
 
+    //Adding module to the project
+    implementation(project(":annotations"))
+    
     //Annotation Processors
-    //1 - kapt = kotlin annotation processor used to convert kotlin annotation code so that java annotation processor can understand it so it acts like a middle man 
+    //1 - kapt = kotlin annotation processor used to convert kotlin annotation code so that java annotation processor can understand it so it acts like a middle man
     //2 - ksp = Ksp is a annotation processor for kotlin don't need any middle man
 }

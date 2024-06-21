@@ -11,6 +11,7 @@ composeBom = "2023.08.00"
 dagger-hilt = "2.50"
 dagger-hilt-compiler = "2.50"
 adp = "2.50"
+jetbrainsKotlinJvm = "1.9.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -35,4 +36,5 @@ dagger-hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", nam
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 daggerHiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "adp"}
+jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
 
