@@ -76,7 +76,8 @@ dependencies {
 
     //Adding module to the project
     implementation(project(":annotations"))
-    
+    kapt(project(":processors"))
+
     //Annotation Processors
     //1 - kapt = kotlin annotation processor used to convert kotlin annotation code so that java annotation processor can understand it so it acts like a middle man
     //2 - ksp = Ksp is a annotation processor for kotlin don't need any middle man

@@ -77,7 +77,7 @@ class GenerateBindingProcessor : AbstractProcessor() {
                     .addMember(
                         "value",
                         "\$T.class",
-                        ClassName.get("dagger.hilt.components","SingletonComponents")
+                        ClassName.get("dagger.hilt.components","SingletonComponent")
                     )
                     .build()
             )
@@ -85,8 +85,8 @@ class GenerateBindingProcessor : AbstractProcessor() {
             .addOriginatingElement(type)
             .build()
 
-        val javaFile = JavaFile.builder(ClassName.get(type).packageName(),classSpec)
-
+        val javaFile = JavaFile.builder(ClassName.get(type).packageName(),classSpec).build()
+        javaFile.writeTo(processingEnv.filer)
 
     }
 

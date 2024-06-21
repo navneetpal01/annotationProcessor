@@ -6,18 +6,18 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 
 
-@Module
-@InstallIn(SingletonComponent::class)
-abstract class MyRepositoryModule {
-
-
-    @Binds
-    abstract fun bindMyRepository(impl : MyRepositoryIml) : MyRepository
-
-
-
-
-}
+//@Module
+//@InstallIn(SingletonComponent::class)
+//abstract class MyRepositoryModule {
+//
+//
+//    @Binds
+//    abstract fun bindMyRepository(impl : MyRepositoryIml) : MyRepository
+//
+//
+//
+//
+//}
 
 
 //The reason why we use abstract module imagine a scenario when we have multiple modules and we need database in our another module

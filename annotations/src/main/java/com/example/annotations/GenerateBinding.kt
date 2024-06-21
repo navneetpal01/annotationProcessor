@@ -4,6 +4,7 @@ import kotlin.reflect.KClass
 
 
 
+
 @Target(AnnotationTarget.CLASS) //It can only be applied on a class
 @Retention(AnnotationRetention.BINARY)
 //There are three types of Retention
