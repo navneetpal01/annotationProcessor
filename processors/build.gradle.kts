@@ -11,4 +11,5 @@ java {
 dependencies {
     implementation(project(":annotations"))
     implementation(libs.javapoet)
+    implementation("com.google.dagger:dagger:2.50")
 }
