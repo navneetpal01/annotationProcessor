@@ -13,7 +13,7 @@ dagger-hilt-compiler = "2.50"
 adp = "2.50"
 javapoet = "1.13.0"
 auto-service = "1.1.1"
-incap = "1.1.0"
+incap = "1.0.0"
 jetbrainsKotlinJvm = "1.9.0"
 
 [libraries]

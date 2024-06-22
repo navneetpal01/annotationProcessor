@@ -10,6 +10,8 @@ import com.squareup.javapoet.TypeName
 import com.squareup.javapoet.TypeSpec
 import dagger.Binds
 import dagger.Module
+import net.ltgt.gradle.incap.IncrementalAnnotationProcessor
+import net.ltgt.gradle.incap.IncrementalAnnotationProcessorType
 import javax.annotation.processing.AbstractProcessor
 import javax.annotation.processing.ProcessingEnvironment
 import javax.annotation.processing.RoundEnvironment
@@ -21,6 +23,8 @@ import javax.lang.model.element.TypeElement
 
 //To auto don't need to manually define in Resources / Meta. it automatically generates the files for the Processor class
 @AutoService(Process::class)
+//TODO Lean about gradle incremental build
+@IncrementalAnnotationProcessor(IncrementalAnnotationProcessorType.ISOLATING) //Isolating means our task is isolated form other we aren't dependent on others
 class GenerateBindingProcessor : AbstractProcessor() {
 
     private val generateBindingAnnotation = GenerateBinding::class
