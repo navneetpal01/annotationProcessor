@@ -1,6 +1,7 @@
 package com.example.processors
 
 import com.example.annotations.GenerateBinding
+import com.google.auto.service.AutoService
 import com.squareup.javapoet.AnnotationSpec
 import com.squareup.javapoet.ClassName
 import com.squareup.javapoet.JavaFile
@@ -18,6 +19,8 @@ import javax.lang.model.element.Name
 import javax.lang.model.element.TypeElement
 
 
+//To generate the files for the Processor class
+@AutoService
 class GenerateBindingProcessor : AbstractProcessor() {
 
     private val generateBindingAnnotation = GenerateBinding::class
