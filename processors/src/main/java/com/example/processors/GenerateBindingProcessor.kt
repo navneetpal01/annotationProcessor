@@ -19,8 +19,8 @@ import javax.lang.model.element.Name
 import javax.lang.model.element.TypeElement
 
 
-//To generate the files for the Processor class
-@AutoService
+//To auto don't need to manually define in Resources / Meta. it automatically generates the files for the Processor class
+@AutoService(Process::class)
 class GenerateBindingProcessor : AbstractProcessor() {
 
     private val generateBindingAnnotation = GenerateBinding::class
